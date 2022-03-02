@@ -32,7 +32,7 @@ services:
     volumes:
         - "./openpype4-backend:/openpype"
     ports:
-      - "${OPS_BACKEND_LISTEN-5000}:5000"
+      - "${OPS_BACKEND_LISTEN-localhost:5000}:5000"
     working_dir: /openpype
     command: ./run.sh --reload --log-level warning --host 0.0.0.0 --port 5000
     restart: unless-stopped
