@@ -1,0 +1,9 @@
+[submodule "openpype4-frontend"]
+	path = openpype4-frontend
+	url = https://github.com/pypeclub/openpype4-frontend
+[submodule "openpype4-backend"]
+	path = openpype4-backend
+	url = https://github.com/pypeclub/openpype4-backend
+[submodule "openpype4-tests"]
+	path = openpype4-tests
+	url = https://github.com/pypeclub/openpype4-tests

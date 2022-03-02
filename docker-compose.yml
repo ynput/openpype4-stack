@@ -11,13 +11,13 @@ services:
   postgres:
     image: postgres
     ports:
-      - "${OPS_PG_LISTEN-127.0.0.1:5432}:5432"
+      - "${OPS_PG_LISTEN-127.0.0.1:54321}:5432"
     environment:
       - "POSTGRES_USER=pypeusr"
       - "POSTGRES_PASSWORD=pypepass"
       - "POSTGRES_DB=pype"
     volumes:
-      - db:/var/lib/postgresql
+      - db:/var/lib/postgresql/data
       - ./openpype4-backend/schemas/schema.public.sql:/docker-entrypoint-initdb.d/10-schema.sql
     restart: unless-stopped
 
@@ -32,7 +32,7 @@ services:
     volumes:
         - "./openpype4-backend:/openpype"
     ports:
-        - "${OPS_BACKEND_LISTEN-127.0.0.1:5000}:5000"
+      - "${OPS_BACKEND_LISTEN-5000}:5000"
     working_dir: /openpype
     command: ./run.sh --reload --log-level warning --host 0.0.0.0 --port 5000
     restart: unless-stopped
@@ -51,10 +51,10 @@ services:
       - "./support/Caddyfile:/etc/caddy/Caddyfile"
       - "./openpype4-frontend/build:/frontend"
     ports:
-      - "${OPS_HTTP_PORT-80}:80"
-      - "${OPS_HTTPS_PORT-443}:443"
+      - "${OPS_HTTP_LISTEN-80}:80"
+      - "${OPS_HTTPS_LISTEN-443}:443"
     environment:
-      - "OPENPYPE_HOSTNAME=${OPENPYPE_HOSTNAME-*:80}"
+      - "OPS_HOSTNAME=${OPS_HOSTNAME-*:80}"
     restart: unless-stopped
     depends_on:
       - backend
