@@ -32,7 +32,8 @@ Run `docker-compose up` command.
 
 ### Updating
 
-Use `git submodule update --remote` to pull the newest version of submodules.
+Use `git pull` and then `git submodule update --remote` 
+to pull the newest version of submodules.
 In case of a major change, you might need to rebuild the database using the
 following command:
 
