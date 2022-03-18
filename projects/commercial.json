@@ -58,6 +58,7 @@
                         {
                             "name": "rigMain", 
                             "family": "rig",
+                            "_task_link": "rigging",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -68,6 +69,7 @@
                         {
                             "name": "modelMain", 
                             "family": "model",
+                            "_task_link": "modeling",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -82,6 +84,7 @@
                         {
                             "name": "modelProxy", 
                             "family": "model",
+                            "_task_link": "modeling",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -96,6 +99,7 @@
                         {
                             "name": "modelSculpt", 
                             "family": "model",
+                            "_task_link": "modeling",
                             "_representations": [
                                 {
                                     "name": "obj",
@@ -168,6 +172,7 @@
                         {
                             "name": "lookMain", 
                             "family": "look",
+                            "_task_link": "lookdev",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -182,6 +187,7 @@
                         {
                             "name": "lookWet", 
                             "family": "look",
+                            "_task_link": "lookdev",
                             "_representations": [
                                 {
                                     "name": "mtlx",
@@ -207,6 +213,7 @@
                         {
                             "name": "layoutMain", 
                             "family": "layout",
+                            "_task_link" : "layout",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -217,6 +224,7 @@
                         {
                             "name": "setdressMain", 
                             "family": "setdress",
+                            "_task_link": "setdress",
                             "_representations": [
                                 {
                                     "name": "ma",
@@ -422,6 +430,7 @@
                 {
                     "name": "animationChar1",
                     "family": "animation",
+                    "_task_link": "animation",
                     "_representations": [
                         {
                             "name": "abc",
@@ -436,6 +445,7 @@
                 {
                     "name": "animationChar2",
                     "family": "animation",
+                    "_task_link": "animation",
                     "_representations": [
                         {
                             "name": "abc",
