@@ -1,10 +1,6 @@
-{"LINK_TYPES": [
-    "breakdown|subset|folder",
-    "breakdown|folder|folder",
-    "reference|version|version",
-    "generative|version|version"
-],
-"GEN_CONFIG": [
+{
+  "project_name": "demo_Commercial",
+  "links": [
     {
         "link_type": "reference|version|version",
         "input": {
@@ -18,7 +14,7 @@
             "version": "hero"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     },
     {
         "link_type": "generative|version|version",
@@ -31,7 +27,7 @@
             "subset_name": "model"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     },
     {
         "link_type": "generative|version|version",
@@ -44,7 +40,7 @@
             "subset_name": "rig"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     },
     {
         "link_type": "generative|version|version",
@@ -57,7 +53,7 @@
             "subset_name": "look"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     },  
     {
         "link_type": "reference|version|version",
@@ -137,7 +133,7 @@
             "subset_name": "^workfileAnimation$"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     },
     {
         "link_type": "generative|version|version",
@@ -149,7 +145,7 @@
             "subset_name": "render"
         },
         "same_folder": true,
-        "linkMatchingVersions": true
+        "link_matching_versions": true
     }
-]
+  ]
 }

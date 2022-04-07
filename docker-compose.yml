@@ -18,7 +18,6 @@ services:
       - "POSTGRES_DB=pype"
     volumes:
       - db:/var/lib/postgresql/data
-      - ./openpype4-backend/schemas/schema.public.sql:/docker-entrypoint-initdb.d/10-schema.sql
     restart: unless-stopped
 
   redis:
