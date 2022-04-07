@@ -1,0 +1,155 @@
+{"LINK_TYPES": [
+    "breakdown|subset|folder",
+    "breakdown|folder|folder",
+    "reference|version|version",
+    "generative|version|version"
+],
+"GEN_CONFIG": [
+    {
+        "link_type": "reference|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/characters/.*",
+            "subset_name": "modelMain|modelProxy",
+            "version": "hero"
+        },
+        "output": {
+            "subset_name": "^rigMain$",
+            "version": "hero"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    },
+    {
+        "link_type": "generative|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/.*",
+            "subset_name": "workfileModelling"
+        },
+        "output": {
+            "subset_name": "model"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    },
+    {
+        "link_type": "generative|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/characters/.*",
+            "subset_name": "workfileRigging"
+        },
+        "output": {
+            "subset_name": "rig"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    },
+    {
+        "link_type": "generative|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/[props|characters].*",
+            "subset_name": "workfileLookdev"
+        },
+        "output": {
+            "subset_name": "look"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    },  
+    {
+        "link_type": "reference|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/props.*",
+            "subset_name": "model",
+            "version": "latest"
+        },
+        "output": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/environments.*",
+            "subset_name": "^workfile[Layout|Setdress].*"
+        },
+        "same_folder": false
+    }, 
+    {
+        "link_type": "breakdown|folder|folder",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/characters/.*"
+        },
+        "output": {
+            "folder_type": "Shot",
+            "limit": 20
+        },
+        "same_folder": false
+    },
+    {
+        "link_type": "breakdown|folder|folder",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/props/.*",
+            "limit": 10
+        },
+        "output": {
+            "folder_type": "Shot",
+            "limit": 10
+        },
+        "same_folder": false
+    },
+    {
+        "link_type": "reference|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/characters/.*",
+            "subset_name": "^rigMain$"
+        },
+        "output": {
+            "folder_type": "Shot",
+            "subset_name": "^workfileAnimation$",
+            "limit": 20
+        },
+        "same_folder": false
+    },
+    {
+        "link_type": "reference|version|version",
+        "input": {
+            "folder_type": "Asset",
+            "folder_path": "^assets/environments/.*",
+            "subset_name": "^setdressMain$"
+        },
+        "output": {
+            "folder_type": "Shot",
+            "subset_name": "[Ll]ayout",
+            "limit": 10
+        },
+        "same_folder": false
+    },
+    {
+        "link_type": "reference|version|version",
+        "input": {
+            "folder_type": "Shot",
+            "subset_name": "^layoutMain$"
+        },
+        "output": {
+            "subset_name": "^workfileAnimation$"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    },
+    {
+        "link_type": "generative|version|version",
+        "input": {
+            "folder_type": "Shot",
+            "subset_name": "^workfileLighting$"
+        },
+        "output": {
+            "subset_name": "render"
+        },
+        "same_folder": true,
+        "linkMatchingVersions": true
+    }
+]
+}
