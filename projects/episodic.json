@@ -18,7 +18,7 @@
         "Animation": {"icon": "directions_run"},
         "FX": {"icon": "fireplace"},
         "Lighting": {"icon": "highlight"},
-        "Compositing": {"icon": "layer"},
+        "Compositing": {"icon": "layers"},
         "Edit": {"icon": "imagesearch_roller"}
     },
     "attrib": {
