@@ -1,25 +1,25 @@
 {
     "name": "demo_Big_Feature",
     "folder_types": {
-        "Episode": {},
-        "Asset": {},
-        "Shot": {},
-        "Sequence": {}
+        "Episode": {"icon": "desktop_windows"},
+        "Asset": {"icon": "smart_toy"},
+        "Shot": {"icon": "movie"},
+        "Sequence": {"icon": "theaters"}
     },
     "task_types": {
-        "Art": {},
-        "Modeling": {},
-        "Texture": {},
-        "Lookdev": {},
-        "Rigging": {},
-        "Matchmove": {},
-        "Layout": {},
-        "Setdress": {},
-        "Animation": {},
-        "FX": {},
-        "Lighting": {},
-        "Compositing": {},
-        "Edit": {}
+        "Art": {"icon": "palette"},
+        "Modeling": {"icon": "language"},
+        "Texture": {"icon": "brush"},
+        "Lookdev": {"icon": "ev_shadow"},
+        "Rigging": {"icon": "construction"},
+        "Matchmove": {"icon": "switch_video"},
+        "Layout": {"icon": "nature_people"},
+        "Setdress": {"icon": "scene"},
+        "Animation": {"icon": "directions_run"},
+        "FX": {"icon": "fireplace"},
+        "Lighting": {"icon": "highlight"},
+        "Compositing": {"icon": "layer"},
+        "Edit": {"icon": "imagesearch_roller"}
     },
     "attrib": {
         "fps": 25,
