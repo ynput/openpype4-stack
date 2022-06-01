@@ -48,7 +48,7 @@ services:
     image: caddy
     volumes:
       - "./support/Caddyfile:/etc/caddy/Caddyfile"
-      - "./openpype4-frontend/build:/frontend"
+      - "./openpype4-frontend/dist:/frontend"
     ports:
       - "${OPS_HTTP_LISTEN-80}:80"
       - "${OPS_HTTPS_LISTEN-443}:443"
