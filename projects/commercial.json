@@ -1,49 +1,6 @@
 {
     "name": "demo_Commercial",
-    "folder_types": {
-        "Episode": {"icon": "desktop_windows"},
-        "Asset": {"icon": "smart_toy"},
-        "Shot": {"icon": "movie"},
-        "Sequence": {"icon": "theaters"}
-    },
-    "task_types": {
-        "Art": {"icon": "palette"},
-        "Modeling": {"icon": "language"},
-        "Texture": {"icon": "brush"},
-        "Lookdev": {"icon": "ev_shadow"},
-        "Rigging": {"icon": "construction"},
-        "Matchmove": {"icon": "switch_video"},
-        "Layout": {"icon": "nature_people"},
-        "Setdress": {"icon": "scene"},
-        "Animation": {"icon": "directions_run"},
-        "FX": {"icon": "fireplace"},
-        "Lighting": {"icon": "highlight"},
-        "Compositing": {"icon": "layers"},
-        "Edit": {"icon": "imagesearch_roller"}
-    },
-    "attrib": {
-        "fps": 25,
-        "resolutionWidth": 1920,
-        "resolutionHeight": 1080,
-        "frameStart": 1001,
-        "frameEnd": 1150,
-        "handleStart": 0,
-        "handleEnd": 0
-    },
-    "data": {
-        "applications": [
-            "maya_2022",
-            "nuke_13",
-            "photoshop_2021",
-            "hiero_13",
-            "aftereffects_2021",
-            "blender_3-00",
-            "houdini_19"
-        ]
-    },
-    "config": {
-    },
-
+    "code": "com",
     "hierarchy": [
         {
             "name": "assets",
