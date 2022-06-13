@@ -33,7 +33,7 @@ services:
     ports:
       - "${OPS_BACKEND_LISTEN-5000}:5000"
     working_dir: /openpype
-    command: ./run.sh --reload --log-level warning --host 0.0.0.0 --port 5000
+    command: bash -c "python -m setup --ensure-installed && uvicorn --reload --log-level warning --host 0.0.0.0 --port 5000 openpype.api:app"
     restart: unless-stopped
     depends_on:
       - redis
