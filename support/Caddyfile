@@ -3,6 +3,7 @@
         reverse_proxy /graphql      http://backend:5000
         reverse_proxy /graphiql     http://backend:5000
         reverse_proxy /api/*        http://backend:5000
+        reverse_proxy /addons/*     http://backend:5000
         reverse_proxy /docs         http://backend:5000
         reverse_proxy /openapi.json http://backend:5000
 
