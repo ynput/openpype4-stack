@@ -37,7 +37,7 @@ to pull the newest version of submodules.
 In case of a major change, you might need to rebuild the database using the
 following command:
 
-`docker-compose exec backend ./tool-setup --with-schema`
+`./tool-setup --with-schema`
 
 or by turning the stack down including the database (`docker-compose down -v`)
 and starting it again.
