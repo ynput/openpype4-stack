@@ -11,7 +11,7 @@ Installation
 ### Build frontend
 
 It is crucial to build the frontend before starting the stack.
-Otherwise it won't be available.
+Otherwise it won't be available. Node 18+ and yarn is required to do so.
 
 Use `yarn build` in the `openpype4-frontend`
 (see `openpype4-frontend/README.md` for more details).

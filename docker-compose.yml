@@ -19,6 +19,8 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     restart: unless-stopped
+      #    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
+
 
   redis:
     image: redis:alpine
@@ -33,7 +35,7 @@ services:
     ports:
       - "${OPS_BACKEND_LISTEN-5000}:5000"
     working_dir: /openpype
-    command: bash -c "python -m setup --ensure-installed && uvicorn --reload --log-level warning --host 0.0.0.0 --port 5000 openpype.api:app"
+    command: ./start.sh
     restart: unless-stopped
     depends_on:
       - redis
